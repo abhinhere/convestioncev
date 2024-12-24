@@ -1,0 +1,120 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: linear-gradient(to bottom, #FF0066, #FF8A00);
+    color: #fff;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.container {
+    
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    padding: 20px;
+    width: 100%;
+    max-width: 400px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    
+}
+
+.profile-card {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.form{
+    align-items: center;
+}
+
+.profile-info h2 {
+    font-size: 18px;
+    text-align: center;
+}
+
+.profile-info p {
+    font-size: 14px;
+    opacity: 0.9;
+    text-align: center;
+}
+
+.message-box {
+    background-color: rgba(255, 255, 255, 0.15);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+textarea {
+    width: 100%;
+    border: none;
+    outline: none;
+    background: transparent;
+    color: #fff;
+    resize: none;
+    font-size: 14px;
+}
+
+textarea::placeholder {
+    color: #fff;
+    opacity: 0.7;
+}
+
+.lock-icon {
+    font-size: 12px;
+    margin-top: 5px;
+    color: #FFD700;
+}
+
+.send-button,
+.get-message-button {
+    background-color: #000;
+    color: #fff;
+    border: none;
+    border-radius: 25px;
+    padding: 10px 20px;
+    width: 100%;
+    font-size: 16px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.get-message-button {
+    background-color: #fff;
+    color: #000;
+    font-weight: bold;
+}
+
+.info-text {
+    font-size: 14px;
+    margin: 15px 0;
+}
+
+footer {
+    margin-top: 15px;
+    font-size: 12px;
+    opacity: 0.7;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
