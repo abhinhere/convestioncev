@@ -5,21 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cev Confessions</title>
     <link rel="stylesheet" href="styles.css">
-    <script src="myscripts.js"></script>
+   
 </head>
 <body>
     <div id="message" class="container">
         <div class="profile-card">
-        <form class="form">
+        <form id="data-form" class="form">
+            
             <div class="profile-info">
-                <h2>CEV CONFESSIONS</h2>
-                <p>send me anonymous messages!</p>
+                <center><h2>CEV CONFESSIONS</h2></center>
+                <p>send anonymous messages!</p>
             </div>
+        
         </div>
         <div class="message-box">
-            <textarea placeholder="send me anonymous messages..." rows="4"></textarea>
-            <div class="lock-icon">🔒 anonymous q&a</div>
-            <button class="send-button">Send!</button>
+            <textarea id="msgContent" placeholder="send anonymous messages..." rows="4"></textarea>
+            <button type="submit" class="send-button">Send!</button>
         </div>
         </form>
         <p class="info-text"></p>
@@ -41,5 +42,8 @@
     </div>
     <button onclick="myFunction()">bee</button>
     <button onclick="mynext()">hehe</button>
+    <script src="https://www.gstatic.com/firebasejs/7.22.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.22.1/firebase-auth.js"></script>
+    <script src="myscripts.js"></script>
 </body>
 </html>
