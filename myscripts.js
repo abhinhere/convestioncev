@@ -43,8 +43,13 @@ const getElementVal = (id) => {
   return document.getElementById(id).value;
 };
 
-const content ='This is content to share';
 
-document.getElementById("share").addEventListener("click",()=>{
-  let whatsappUrl = "whatsapp://send?text="+encodeURIComponent(content)
-})
+// whatsapp share
+
+document.getElementById('shareBtn').addEventListener('click', function () {
+  const message = encodeURIComponent("Check out this cevconfession website!");
+  const url = encodeURIComponent("https://cevconfessions.vercel.app/");
+  const whatsappUrl = `https://wa.me/?text=${message} ${url}`;
+
+  window.open(whatsappUrl, '_blank');
+});
