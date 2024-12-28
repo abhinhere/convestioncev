@@ -33,6 +33,11 @@ body {
     align-items: center;
     margin-bottom: 20px;
 }
+img {
+    border-radius: 10%;
+    width: 250px;
+    height: 250px;
+  }
 
 .form{
     align-items: center;
@@ -40,6 +45,7 @@ body {
 
 .profile-info h2 {
     font-size: 18px;
+    align-items: center;
     text-align: center;
 }
 
