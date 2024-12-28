@@ -45,7 +45,6 @@ const getElementVal = (id) => {
 
 
 // whatsapp share
-
 document.getElementById('shareBtn').addEventListener('click', function () {
   const message = encodeURIComponent("Check out this cevconfession website!");
   const url = encodeURIComponent("https://cevconfessions.vercel.app/");
