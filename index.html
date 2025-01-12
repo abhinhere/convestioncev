@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CEV Confessions</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -17,7 +18,7 @@
         
         </div>
         <div class="message-box">
-            <textarea id="msgContent" placeholder="send anonymous messages..." rows="4"></textarea>
+            <textarea id="msgContent" name="message" placeholder="send anonymous messages..." rows="4"></textarea>
             <button type="submit" class="send-button">Send!</button>
             
         </div>
@@ -28,8 +29,24 @@
             <a href="https://www.instagram.com/cev.stories">Terms</a> | <a href="https://www.instagram.com/cev.stories">Privacy</a>
         </footer>
     </div>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+    <script>
+        $("#contactForm").submit((e)=>{
+            e.preventDefault()
+            $.ajax({
+                url:"https://script.google.com/macros/s/AKfycbxDqGC_QuZ-v4ZYpp5_NZCtZDev73dcZFUePWBJ6QAz3uGFpj97gyqt_WlxZSbm2Xg/exec",
+                data:$("#contactForm").serialize(),
+                method:"post",
+                success:function (response){
+                    window.location.replace("done.html");
+                    
+                },
+                error:function (err){
+                    alert("Something Error")
+    
+                }
+            })
+        })
+    </script>
     <script src="myscripts.js"></script>
     
 </body>
