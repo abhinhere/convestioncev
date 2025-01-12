@@ -1,11 +1,11 @@
 const firebaseConfig = {
-  apiKey: "AIzaSyDofW0HJRrJkCU3wKuxMovWviQ4Z8bkoLc",
-  authDomain: "confession-47323.firebaseapp.com",
-  databaseURL: "https://confession-47323-default-rtdb.firebaseio.com",
-  projectId: "confession-47323",
-  storageBucket: "confession-47323.firebasestorage.app",
-  messagingSenderId: "442730912635",
-  appId: "1:442730912635:web:bc70e77f0364ad8bdffbde"
+  apiKey: "AIzaSyBDI5X3It0FQSz27rmZJYqgeXGgGHxXPA4",
+  authDomain: "confessions-5e282.firebaseapp.com",
+  databaseURL: "https://confessions-5e282-default-rtdb.firebaseio.com",
+  projectId: "confessions-5e282",
+  storageBucket: "confessions-5e282.firebasestorage.app",
+  messagingSenderId: "480852008526",
+  appId: "1:480852008526:web:19c7a2310d1bd0268b2d1f"
 };
 
 // initialize firebase
